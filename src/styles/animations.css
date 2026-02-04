@@ -1,0 +1,252 @@
+/* Interactive Button and Box Animations */
+
+/* Enhanced Button hover and click animations */
+.animate-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.animate-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.animate-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.animate-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(6, 182, 212, 0.6), 0 0 25px rgba(236, 72, 153, 0.4);
+}
+
+.animate-button:hover::after {
+  transform: translateX(100%);
+}
+
+.animate-button:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.5);
+}
+
+.animate-button:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Card/Box hover animations */
+.animate-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.animate-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.5), rgba(236, 72, 153, 0.5), rgba(168, 85, 247, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.animate-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(168, 85, 247, 0.4);
+}
+
+.animate-card:hover::before {
+  opacity: 1;
+}
+
+.animate-card:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Pulse animation for interactive elements */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(236, 72, 153, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Shine effect on hover */
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
+}
+
+.animate-shine:hover::after {
+  animation: shine 0.8s ease-in-out;
+}
+
+/* Float animation for cards */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth float animation for sections - slower and more elegant */
+@keyframes float-smooth {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float-smooth {
+  animation: float-smooth 4s ease-in-out infinite;
+}
+
+/* Delayed float animations for staggered effect */
+.animate-float-delay-1 {
+  animation: float-smooth 4s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.animate-float-delay-2 {
+  animation: float-smooth 4s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.animate-float-delay-3 {
+  animation: float-smooth 4s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.animate-float-delay-4 {
+  animation: float-smooth 4s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+/* Glow on focus for input-like elements */
+.animate-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Scale animation for clickable items */
+.animate-scale {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-scale:hover {
+  transform: scale(1.05);
+}
+
+.animate-scale:active {
+  transform: scale(0.95);
+}
+
+/* Bounce animation */
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Ripple effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.animate-ripple:active::after {
+  animation: ripple 0.6s ease-out;
+}

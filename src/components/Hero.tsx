@@ -78,7 +78,7 @@ export function Hero() {
             href="https://docs.google.com/forms/d/e/1FAIpQLScl1th-1kopWbRzwokbhoQsS_tvTBvUOUQd674j5Q7JatlTPg/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full hover:from-pink-600 hover:to-purple-700 transition-all"
+            className="animate-button animate-shine inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full hover:from-pink-600 hover:to-purple-700 transition-all"
           >
             Register now
           </a>
@@ -86,19 +86,19 @@ export function Hero() {
         </div>
         
         <div className="flex justify-center gap-6 flex-wrap">
-          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
             <div className="text-4xl text-white mb-2">{timeLeft.days}</div>
             <div className="text-gray-400 text-sm">Days</div>
           </div>
-          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
             <div className="text-4xl text-white mb-2">{timeLeft.hours}</div>
             <div className="text-gray-400 text-sm">Hours</div>
           </div>
-          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
             <div className="text-4xl text-white mb-2">{timeLeft.minutes}</div>
             <div className="text-gray-400 text-sm">Minutes</div>
           </div>
-          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
             <div className="text-4xl text-white mb-2">{timeLeft.seconds}</div>
             <div className="text-gray-400 text-sm">Seconds</div>
           </div>

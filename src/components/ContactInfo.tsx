@@ -24,7 +24,7 @@ export function ContactInfo() {
           {coordinators.map((coordinator, index) => (
             <div
               key={index}
-              className={`bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-5 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
+              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-5 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
                 index === coordinators.length - 1 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
               }`}
             >

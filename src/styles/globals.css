@@ -183,3 +183,6 @@
 html {
   font-size: var(--font-size);
 }
+
+/* Import animation styles */
+@import './animations.css';

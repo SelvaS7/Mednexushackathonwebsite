@@ -26,7 +26,7 @@ export function EventSchedule() {
 
   return (
     <section id="event" className="py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl animate-float-delay-2">
         <h2 className="text-5xl text-center mb-4">
           <span className="text-white">EVENT </span>
           <span className="text-cyan-400">SCHEDULE</span>
@@ -51,7 +51,7 @@ export function EventSchedule() {
                   </div>
                   
                   <div className="md:w-1/2">
-                    <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 hover:border-purple-500/60 transition-all">
+                    <div className="animate-card bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 hover:border-purple-500/60 transition-all">
                       <h3 className="text-white text-xl">{event.title}</h3>
                     </div>
                   </div>

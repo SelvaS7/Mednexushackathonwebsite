@@ -11,7 +11,7 @@ export function AboutCompanies() {
         
         <div className="space-y-12">
           {/* About Acutix Soft LLP */}
-          <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8">
+          <div className="animate-float-delay-3 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8">
             <h3 className="text-3xl mb-6">
               <span className="text-cyan-400">About Acutix Soft LLP</span>
             </h3>
@@ -25,7 +25,7 @@ export function AboutCompanies() {
           </div>
           
           {/* About VISTAS */}
-          <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8">
+          <div className="animate-float-delay-4 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8">
             <h3 className="text-3xl mb-6">
               <span className="text-cyan-400">About Vels Institute of Science, Technology and Advanced Studies (VISTAS)</span>
             </h3>

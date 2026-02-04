@@ -14,10 +14,10 @@ export function Navbar() {
           </div>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-white hover:text-cyan-400 transition-colors">HOME</a>
-            <a href="#about" className="text-white hover:text-cyan-400 transition-colors">ABOUT</a>
-            <a href="#event" className="text-white hover:text-cyan-400 transition-colors">EVENT</a>
-            <a href="#contact" className="text-white hover:text-cyan-400 transition-colors">CONTACT</a>
+            <a href="#home" className="text-white hover:text-cyan-400 transition-colors animate-scale">HOME</a>
+            <a href="#about" className="text-white hover:text-cyan-400 transition-colors animate-scale">ABOUT</a>
+            <a href="#event" className="text-white hover:text-cyan-400 transition-colors animate-scale">EVENT</a>
+            <a href="#contact" className="text-white hover:text-cyan-400 transition-colors animate-scale">CONTACT</a>
           </div>
           
           <div className="flex items-center gap-4">
@@ -25,7 +25,7 @@ export function Navbar() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScl1th-1kopWbRzwokbhoQsS_tvTBvUOUQd674j5Q7JatlTPg/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors border border-cyan-400"
+              className="animate-button px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors border border-cyan-400"
             >
               REGISTER
             </a>
