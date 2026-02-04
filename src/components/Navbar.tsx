@@ -21,9 +21,14 @@ export function Navbar() {
           </div>
           
           <div className="flex items-center gap-4">
-            <button className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors border border-cyan-400">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScl1th-1kopWbRzwokbhoQsS_tvTBvUOUQd674j5Q7JatlTPg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors border border-cyan-400"
+            >
               REGISTER
-            </button>
+            </a>
           </div>
         </div>
       </div>
