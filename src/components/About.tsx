@@ -14,11 +14,11 @@ export function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="bg-black/30 rounded-2xl p-6 border border-yellow-500/30">
               <div className="text-white text-xl mb-2">First Prize</div>
-              <div className="text-yellow-400 text-3xl">₹6,000/-</div>
+              <div className="text-yellow-400 text-3xl">₹4,000/-</div>
             </div>
             <div className="bg-black/30 rounded-2xl p-6 border border-gray-400/30">
               <div className="text-white text-xl mb-2">Second Prize</div>
-              <div className="text-gray-300 text-3xl">₹4,000/-</div>
+              <div className="text-gray-300 text-3xl">₹2,000/-</div>
             </div>
             <div className="bg-black/30 rounded-2xl p-6 border border-cyan-500/30">
               <div className="text-white text-xl mb-2">Internships</div>
