@@ -610,6 +610,10 @@
     display: inline-block;
   }
 
+  .inline-flex {
+    display: inline-flex;
+  }
+
   .h-4 {
     height: calc(var(--spacing) * 4);
   }

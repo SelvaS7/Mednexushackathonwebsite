@@ -34,7 +34,14 @@ export function Footer() {
             <div className="space-y-3 text-gray-300 text-sm">
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                <span>VISTAS - Pallavaram</span>
+                <a
+                  href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  VISTAS - Pallavaram
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-cyan-400" />
@@ -45,15 +52,7 @@ export function Footer() {
                   mednexus26@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-5 h-5 text-cyan-400" />
-                <a
-                  href="tel:+916374663588"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  +91 6374663588
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import velsHeader from 'figma:asset/8f8ee5cdaad9e9ef99c6ea42a44c0f22196b94bf.png
 import velsAccreditation from 'figma:asset/57e90e930d262dc76deb5d81c1f7e1b6bb21845b.png';
 import React, { useState, useEffect } from 'react';
 import acutixLogo from 'figma:asset/1fa495b39f1c3d98a68aec11e57c680d5566de7b.png';
+import { MapPin } from 'lucide-react';
 
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({
@@ -61,6 +62,15 @@ export function Hero() {
         </h1>
         
         <p className="text-[rgb(255,255,255)] text-lg mb-2">February 9, 2026</p>
+        <a 
+          href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg mb-2"
+        >
+          <MapPin className="w-5 h-5 flex-shrink-0" />
+          <span>VISTAS - Pallavaram</span>
+        </a>
         <p className="text-[rgb(255,255,255)] text-xl mb-8">A Low-Code /No-Code Innovation Challenge for Healthcare Systems</p>
         
         <div className="mb-12">
