@@ -20,25 +20,27 @@ export function ContactInfo() {
           Please contact: Our Student Co-Ordinator's
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 max-w-2xl mx-auto">
           {coordinators.map((coordinator, index) => (
             <div
               key={index}
-              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-xl md:rounded-2xl p-4 md:p-5 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
-                index === coordinators.length - 1 ? 'sm:col-span-2 md:col-span-2 md:max-w-md md:mx-auto' : ''
+              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-lg md:rounded-xl p-2 md:p-3 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
+                index === coordinators.length - 1 ? 'sm:col-span-2 md:col-span-2 md:max-w-xs md:mx-auto' : ''
               }`}
             >
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="bg-cyan-500/20 p-2.5 md:p-3 rounded-full border border-cyan-400/50">
-                  <User className="w-5 h-5 md:w-6 md:h-6 text-cyan-400" />
+              <div className="flex items-center gap-2 md:gap-2.5">
+                <div className="bg-cyan-500/20 p-1.5 md:p-2 rounded-full border border-cyan-400/50">
+                  <User className="w-4 h-4 md:w-5 md:h-5 text-cyan-400" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-white text-base md:text-lg font-semibold mb-1">{coordinator.name}</h3>
-                  <p className="text-gray-400 text-xs md:text-sm mb-1.5 md:mb-2">{coordinator.dept}</p>
+                  <h3 className="text-white text-sm md:text-base font-semibold mb-0.5">{coordinator.name}</h3>
+                  <p className="text-gray-400 text-xs mb-0.5 md:mb-1">{coordinator.dept}</p>
                   <a 
                     href={`tel:+91${coordinator.phone}`}
-                    className="text-cyan-400 text-sm md:text-base font-mono hover:text-cyan-300 transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-cyan-400 text-xs md:text-sm font-mono hover:text-cyan-300 hover:underline active:text-cyan-200 transition-colors cursor-pointer touch-manipulation py-0.5"
+                    aria-label={`Call ${coordinator.name} at +91 ${coordinator.phone}`}
                   >
+                    <span className="text-cyan-400/70">📞</span>
                     +91-{coordinator.phone}
                   </a>
                 </div>
