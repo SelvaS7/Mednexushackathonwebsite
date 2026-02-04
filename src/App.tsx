@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { EventSchedule } from './components/EventSchedule';
 import { AboutCompanies } from './components/AboutCompanies';
+import { ContactInfo } from './components/ContactInfo';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <About />
         <EventSchedule />
         <AboutCompanies />
+        <ContactInfo />
         <Footer />
       </div>
     </div>
