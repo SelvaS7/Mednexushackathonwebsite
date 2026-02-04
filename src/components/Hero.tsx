@@ -46,9 +46,9 @@ export function Hero() {
       <div className="text-center max-w-4xl">
         {/* Partnership Logos */}
         <div className="flex items-center justify-center gap-4 md:gap-8 mb-8 flex-wrap">
-          <img src={image_0c79ead2911f3a802255d747c282d969b59834a8} alt="Acutix Soft LLP" className="h-24 md:h-32 object-contain" />
+          <img src={image_0c79ead2911f3a802255d747c282d969b59834a8} alt="Acutix Soft LLP" className="h-32 md:h-40 object-contain" />
           <span className="text-cyan-400 text-3xl md:text-4xl">×</span>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-0">
             <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 md:h-32 object-contain" />
             <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-md object-contain" />
           </div>
