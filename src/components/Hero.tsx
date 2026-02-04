@@ -43,64 +43,64 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
-      <div className="text-center max-w-4xl">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4 md:px-6">
+      <div className="text-center max-w-4xl w-full">
         {/* Partnership Logos */}
-        <div className="flex items-center justify-center gap-4 md:gap-8 mb-8 flex-wrap">
-          <img src={image_0c79ead2911f3a802255d747c282d969b59834a8} alt="Acutix Soft LLP" className="h-32 md:h-40 object-contain" />
-          <span className="text-cyan-400 text-3xl md:text-4xl">×</span>
+        <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-8 mb-6 md:mb-8 flex-wrap">
+          <img src={image_0c79ead2911f3a802255d747c282d969b59834a8} alt="Acutix Soft LLP" className="h-24 sm:h-28 md:h-32 lg:h-40 object-contain" />
+          <span className="text-cyan-400 text-2xl sm:text-3xl md:text-4xl">×</span>
           <div className="flex flex-col gap-0">
-            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 md:h-32 object-contain" />
-            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-md object-contain" />
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-20 sm:h-24 md:h-28 lg:h-32 object-contain" />
+            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[250px] sm:max-w-xs md:max-w-md object-contain" />
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-3 md:mb-4 leading-tight">
           <span className="text-cyan-400 font-normal">MEDNEXUS</span>
           <span className="text-pink-500">'26</span>
-          <span className="text-[rgb(255,255,255)] text-[64px]"> - HACKATHON</span>
+          <span className="text-[rgb(255,255,255)] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[64px]"> - HACKATHON</span>
         </h1>
         
-        <p className="text-[rgb(255,255,255)] text-lg mb-2">February 9, 2026</p>
+        <p className="text-[rgb(255,255,255)] text-base md:text-lg mb-2">February 9, 2026</p>
         <a 
           href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg mb-2"
+          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-base md:text-lg mb-2"
         >
-          <MapPin className="w-5 h-5 flex-shrink-0" />
+          <MapPin className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
           <span>VISTAS - Pallavaram</span>
         </a>
-        <p className="text-[rgb(255,255,255)] text-xl mb-8">A Low-Code /No-Code Innovation Challenge for Healthcare Systems</p>
+        <p className="text-[rgb(255,255,255)] text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4">A Low-Code /No-Code Innovation Challenge for Healthcare Systems</p>
         
-        <div className="mb-12">
+        <div className="mb-8 md:mb-12">
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLScl1th-1kopWbRzwokbhoQsS_tvTBvUOUQd674j5Q7JatlTPg/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="animate-button animate-shine inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full hover:from-pink-600 hover:to-purple-700 transition-all"
+            className="animate-button animate-shine inline-block px-6 md:px-8 py-2.5 md:py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-base md:text-lg rounded-full hover:from-pink-600 hover:to-purple-700 transition-all"
           >
             Register now
           </a>
-          <p className="text-yellow-400 text-lg mt-3">FREE REGISTRATION</p>
+          <p className="text-yellow-400 text-base md:text-lg mt-3">FREE REGISTRATION</p>
         </div>
         
-        <div className="flex justify-center gap-6 flex-wrap">
-          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
-            <div className="text-4xl text-white mb-2">{timeLeft.days}</div>
-            <div className="text-gray-400 text-sm">Days</div>
+        <div className="flex justify-center gap-3 sm:gap-4 md:gap-6 flex-wrap px-2">
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
+            <div className="text-2xl sm:text-3xl md:text-4xl text-white mb-1 md:mb-2">{timeLeft.days}</div>
+            <div className="text-gray-400 text-xs md:text-sm">Days</div>
           </div>
-          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
-            <div className="text-4xl text-white mb-2">{timeLeft.hours}</div>
-            <div className="text-gray-400 text-sm">Hours</div>
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
+            <div className="text-2xl sm:text-3xl md:text-4xl text-white mb-1 md:mb-2">{timeLeft.hours}</div>
+            <div className="text-gray-400 text-xs md:text-sm">Hours</div>
           </div>
-          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
-            <div className="text-4xl text-white mb-2">{timeLeft.minutes}</div>
-            <div className="text-gray-400 text-sm">Minutes</div>
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
+            <div className="text-2xl sm:text-3xl md:text-4xl text-white mb-1 md:mb-2">{timeLeft.minutes}</div>
+            <div className="text-gray-400 text-xs md:text-sm">Minutes</div>
           </div>
-          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 min-w-[120px]">
-            <div className="text-4xl text-white mb-2">{timeLeft.seconds}</div>
-            <div className="text-gray-400 text-sm">Seconds</div>
+          <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
+            <div className="text-2xl sm:text-3xl md:text-4xl text-white mb-1 md:mb-2">{timeLeft.seconds}</div>
+            <div className="text-gray-400 text-xs md:text-sm">Seconds</div>
           </div>
         </div>
       </div>

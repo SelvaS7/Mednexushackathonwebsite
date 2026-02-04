@@ -11,33 +11,33 @@ export function ContactInfo() {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 md:py-20 px-4 md:px-6">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-4xl md:text-5xl text-center mb-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-3 md:mb-4">
           <span className="text-cyan-400">Contact Information</span>
         </h2>
-        <p className="text-white/80 text-center mb-12 text-lg">
+        <p className="text-white/80 text-center mb-8 md:mb-12 text-base md:text-lg">
           Please contact: Our Student Co-Ordinator's
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {coordinators.map((coordinator, index) => (
             <div
               key={index}
-              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-5 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
-                index === coordinators.length - 1 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
+              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-xl md:rounded-2xl p-4 md:p-5 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
+                index === coordinators.length - 1 ? 'sm:col-span-2 md:col-span-2 md:max-w-md md:mx-auto' : ''
               }`}
             >
-              <div className="flex items-center gap-4">
-                <div className="bg-cyan-500/20 p-3 rounded-full border border-cyan-400/50">
-                  <User className="w-6 h-6 text-cyan-400" />
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="bg-cyan-500/20 p-2.5 md:p-3 rounded-full border border-cyan-400/50">
+                  <User className="w-5 h-5 md:w-6 md:h-6 text-cyan-400" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-white text-lg font-semibold mb-1">{coordinator.name}</h3>
-                  <p className="text-gray-400 text-sm mb-2">{coordinator.dept}</p>
+                  <h3 className="text-white text-base md:text-lg font-semibold mb-1">{coordinator.name}</h3>
+                  <p className="text-gray-400 text-xs md:text-sm mb-1.5 md:mb-2">{coordinator.dept}</p>
                   <a 
                     href={`tel:+91${coordinator.phone}`}
-                    className="text-cyan-400 text-base font-mono hover:text-cyan-300 transition-colors cursor-pointer"
+                    className="text-cyan-400 text-sm md:text-base font-mono hover:text-cyan-300 transition-colors cursor-pointer"
                   >
                     +91-{coordinator.phone}
                   </a>
