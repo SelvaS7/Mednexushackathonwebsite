@@ -63,11 +63,11 @@ export function About() {
           
           <div className="max-w-md mx-auto animate-float-delay-1">
             <div className="animate-card bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-sm border border-pink-500/20 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-pink-500/50 transition-all cursor-pointer">
-              <div className="h-48 md:h-56 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg md:rounded-xl mb-4 overflow-hidden">
+              <div className="h-56 md:h-64 rounded-lg md:rounded-xl mb-4 overflow-hidden bg-black/20">
                 <img 
                   src={brochureImage}
                   alt="MEDNEXUS'26 Brochure - Healthcare Innovation Hackathon"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h4 className="text-white text-lg md:text-xl mb-2">MEDNEXUS'26 HACKATHON</h4>
