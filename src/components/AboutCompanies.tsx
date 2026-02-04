@@ -11,7 +11,12 @@ export function AboutCompanies() {
         
         <div className="space-y-8 md:space-y-12">
           {/* About Acutix Soft LLP */}
-          <div className="animate-float-delay-3 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8">
+          <a 
+            href="https://www.acutixsoft.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="animate-float-delay-3 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 block cursor-pointer hover:border-purple-400/60 hover:shadow-lg hover:shadow-purple-500/20 transition-all active:scale-[0.99] no-underline"
+          >
             <h3 className="text-2xl md:text-3xl mb-4 md:mb-6">
               <span className="text-cyan-400">About Acutix Soft LLP</span>
             </h3>
@@ -22,10 +27,15 @@ export function AboutCompanies() {
               skill development. Through mentorship and real-world problem statements, Acutix helps students 
               and young engineers build solutions that meet professional and ethical industry standards.
             </p>
-          </div>
+          </a>
           
           {/* About VISTAS */}
-          <div className="animate-float-delay-4 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8">
+          <a 
+            href="https://vistas.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="animate-float-delay-4 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 block cursor-pointer hover:border-purple-400/60 hover:shadow-lg hover:shadow-purple-500/20 transition-all active:scale-[0.99] no-underline"
+          >
             <h3 className="text-2xl md:text-3xl mb-4 md:mb-6">
               <span className="text-cyan-400">About Vels Institute of Science, Technology and Advanced Studies (VISTAS)</span>
             </h3>
@@ -37,7 +47,7 @@ export function AboutCompanies() {
               and a culture of innovation and inclusivity, VISTAS provides an environment that encourages 
               learning, research, and real-world application.
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </section>

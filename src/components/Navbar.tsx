@@ -6,10 +6,13 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3 md:gap-6">
-            <img src={logo} alt="MEDNEXUS" className="h-10 w-10 md:h-12 md:w-12" />
-            <div className="text-white">
-              <div className="text-xs md:text-sm opacity-80">MEDNEXUS'26</div>
+          <div className="flex items-center gap-2 md:gap-4">
+            <img src={logo} alt="MEDNEXUS" className="h-14 w-14 md:h-16 md:w-16 object-contain" />
+            <div>
+              <div className="font-bold text-lg md:text-xl tracking-wide">
+                <span className="text-cyan-400">MEDNEXUS</span>
+                <span className="bg-gradient-to-r from-cyan-400 via-pink-400 to-pink-500 bg-clip-text text-transparent">'26</span>
+              </div>
             </div>
           </div>
           

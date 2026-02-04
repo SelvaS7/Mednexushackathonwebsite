@@ -22,11 +22,13 @@ export function ContactInfo() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 max-w-2xl mx-auto">
           {coordinators.map((coordinator, index) => (
-            <div
+            <a
               key={index}
-              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-lg md:rounded-xl p-2 md:p-3 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 ${
+              href={`tel:+91${coordinator.phone}`}
+              className={`animate-card bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-400/30 rounded-lg md:rounded-xl p-2 md:p-3 hover:border-cyan-400/60 transition-all hover:shadow-lg hover:shadow-cyan-500/20 cursor-pointer no-underline block active:scale-95 ${
                 index === coordinators.length - 1 ? 'sm:col-span-2 md:col-span-2 md:max-w-xs md:mx-auto' : ''
               }`}
+              aria-label={`Call ${coordinator.name} at +91 ${coordinator.phone}`}
             >
               <div className="flex items-center gap-2 md:gap-2.5">
                 <div className="bg-cyan-500/20 p-1.5 md:p-2 rounded-full border border-cyan-400/50">
@@ -35,17 +37,13 @@ export function ContactInfo() {
                 <div className="flex-1">
                   <h3 className="text-white text-sm md:text-base font-semibold mb-0.5">{coordinator.name}</h3>
                   <p className="text-gray-400 text-xs mb-0.5 md:mb-1">{coordinator.dept}</p>
-                  <a 
-                    href={`tel:+91${coordinator.phone}`}
-                    className="inline-flex items-center gap-1.5 text-cyan-400 text-xs md:text-sm font-mono hover:text-cyan-300 hover:underline active:text-cyan-200 transition-colors cursor-pointer touch-manipulation py-0.5"
-                    aria-label={`Call ${coordinator.name} at +91 ${coordinator.phone}`}
-                  >
-                    <span className="text-cyan-400/70">📞</span>
-                    +91-{coordinator.phone}
-                  </a>
+                  <div className="inline-flex items-center gap-1.5 text-cyan-400 text-xs md:text-sm font-mono">
+                    <span className="text-cyan-400/70 text-base">📞</span>
+                    <span>+91-{coordinator.phone}</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
