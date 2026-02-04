@@ -1,3 +1,4 @@
+import image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44 from 'figma:asset/b7b9f7bb278f99cbaed681c51c2e3683f24cba44.png';
 import image_e3ca48b59b673339fcde79baecddafdcd1ae5491 from 'figma:asset/e3ca48b59b673339fcde79baecddafdcd1ae5491.png';
 import image_502e164215457556b0b9aa333c8fc217b56a6cc1 from 'figma:asset/502e164215457556b0b9aa333c8fc217b56a6cc1.png';
 import image_0c79ead2911f3a802255d747c282d969b59834a8 from 'figma:asset/0c79ead2911f3a802255d747c282d969b59834a8.png';
@@ -48,7 +49,7 @@ export function Hero() {
           <img src={image_0c79ead2911f3a802255d747c282d969b59834a8} alt="Acutix Soft LLP" className="h-24 md:h-32 object-contain" />
           <span className="text-cyan-400 text-3xl md:text-4xl">×</span>
           <div className="flex flex-col gap-2">
-            <img src={image_e3ca48b59b673339fcde79baecddafdcd1ae5491} alt="VELS University" className="h-24 md:h-32 object-contain" />
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 md:h-32 object-contain" />
             <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-md object-contain" />
           </div>
         </div>
