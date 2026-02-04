@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Heart, Activity, Pill, Stethoscope, Brain, Cpu, Database, Network, Zap } from 'lucide-react';
+import { Heart, Activity, Brain, Cpu, Database, Network } from 'lucide-react';
 
 export function MedicalTechBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -9,7 +9,7 @@ export function MedicalTechBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { alpha: true });
     if (!ctx) return;
 
     const resizeCanvas = () => {
@@ -19,7 +19,7 @@ export function MedicalTechBackground() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Advanced particle system with medical DNA helix
+    // Optimized particle system with medical DNA helix
     class DNAParticle {
       x: number;
       y: number;
@@ -30,14 +30,14 @@ export function MedicalTechBackground() {
       color: string;
       size: number;
 
-      constructor(x: number, angle: number) {
-        this.x = x;
+      constructor(x: number, angle: number, isInitialized: boolean = false) {
+        this.x = isInitialized ? x : x + canvas.width;
         this.angle = angle;
         this.baseY = canvas.height / 2;
         this.radius = 100;
         this.speed = 0.02;
         this.color = angle % 2 === 0 ? '#06b6d4' : '#ec4899';
-        this.size = 4;
+        this.size = 3;
         this.y = this.baseY + Math.sin(this.angle) * this.radius;
       }
 
@@ -53,44 +53,36 @@ export function MedicalTechBackground() {
       draw() {
         if (!ctx) return;
         
-        // Glow effect
+        // Simplified glow
         ctx.beginPath();
-        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size * 4);
-        gradient.addColorStop(0, this.color + 'AA');
-        gradient.addColorStop(1, this.color + '00');
-        ctx.fillStyle = gradient;
-        ctx.arc(this.x, this.y, this.size * 4, 0, Math.PI * 2);
+        ctx.fillStyle = this.color + '40';
+        ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
         ctx.fill();
 
         // Core
         ctx.beginPath();
         ctx.fillStyle = this.color;
-        ctx.shadowBlur = 10;
-        ctx.shadowColor = this.color;
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
-        ctx.shadowBlur = 0;
       }
     }
 
-    // Neural network nodes
+    // Optimized neural network nodes
     class NeuralNode {
       x: number;
       y: number;
       vx: number;
       vy: number;
       radius: number;
-      connections: NeuralNode[];
       pulse: number;
 
-      constructor() {
+      constructor(isInitialized: boolean = false) {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * 0.3;
         this.vy = (Math.random() - 0.5) * 0.3;
         this.radius = Math.random() * 2 + 1;
-        this.connections = [];
-        this.pulse = Math.random() * Math.PI * 2;
+        this.pulse = isInitialized ? Math.random() * Math.PI * 2 : 0;
       }
 
       update() {
@@ -106,29 +98,23 @@ export function MedicalTechBackground() {
       draw() {
         if (!ctx) return;
         
-        const pulseSize = this.radius + Math.sin(this.pulse) * 1;
+        const pulseSize = this.radius + Math.sin(this.pulse) * 0.5;
         
-        // Outer glow
+        // Simplified glow
         ctx.beginPath();
-        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, pulseSize * 8);
-        gradient.addColorStop(0, 'rgba(147, 51, 234, 0.6)');
-        gradient.addColorStop(1, 'rgba(147, 51, 234, 0)');
-        ctx.fillStyle = gradient;
-        ctx.arc(this.x, this.y, pulseSize * 8, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(147, 51, 234, 0.3)';
+        ctx.arc(this.x, this.y, pulseSize * 5, 0, Math.PI * 2);
         ctx.fill();
 
         // Core
         ctx.beginPath();
         ctx.fillStyle = '#a855f7';
-        ctx.shadowBlur = 15;
-        ctx.shadowColor = '#a855f7';
         ctx.arc(this.x, this.y, pulseSize, 0, Math.PI * 2);
         ctx.fill();
-        ctx.shadowBlur = 0;
       }
     }
 
-    // Data stream particles
+    // Optimized data stream particles
     class DataStream {
       x: number;
       y: number;
@@ -136,12 +122,12 @@ export function MedicalTechBackground() {
       speed: number;
       opacity: number;
 
-      constructor() {
+      constructor(isInitialized: boolean = false) {
         this.x = Math.random() * canvas.width;
-        this.y = -10;
-        this.length = Math.random() * 100 + 50;
-        this.speed = Math.random() * 3 + 2;
-        this.opacity = Math.random() * 0.5 + 0.3;
+        this.y = isInitialized ? Math.random() * canvas.height : -10;
+        this.length = Math.random() * 80 + 40;
+        this.speed = Math.random() * 2 + 1.5;
+        this.opacity = Math.random() * 0.4 + 0.2;
       }
 
       update() {
@@ -155,13 +141,8 @@ export function MedicalTechBackground() {
       draw() {
         if (!ctx) return;
         
-        const gradient = ctx.createLinearGradient(this.x, this.y, this.x, this.y + this.length);
-        gradient.addColorStop(0, `rgba(16, 185, 129, 0)`);
-        gradient.addColorStop(0.5, `rgba(16, 185, 129, ${this.opacity})`);
-        gradient.addColorStop(1, `rgba(16, 185, 129, 0)`);
-        
-        ctx.strokeStyle = gradient;
-        ctx.lineWidth = 2;
+        ctx.strokeStyle = `rgba(16, 185, 129, ${this.opacity})`;
+        ctx.lineWidth = 1.5;
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
         ctx.lineTo(this.x, this.y + this.length);
@@ -169,27 +150,27 @@ export function MedicalTechBackground() {
       }
     }
 
-    // Initialize particles
+    // Initialize particles with proper starting positions
     const dnaParticles: DNAParticle[] = [];
     const neuralNodes: NeuralNode[] = [];
     const dataStreams: DataStream[] = [];
 
-    // Create DNA helix
-    for (let i = 0; i < 30; i++) {
-      dnaParticles.push(new DNAParticle(i * 40, i * 0.5));
-    }
-
-    // Create neural network
-    for (let i = 0; i < 50; i++) {
-      neuralNodes.push(new NeuralNode());
-    }
-
-    // Create data streams
+    // Create DNA helix - start in place
     for (let i = 0; i < 20; i++) {
-      dataStreams.push(new DataStream());
+      dnaParticles.push(new DNAParticle(i * 50, i * 0.5, true));
     }
 
-    // Draw neural connections
+    // Create neural network - start in place
+    for (let i = 0; i < 30; i++) {
+      neuralNodes.push(new NeuralNode(true));
+    }
+
+    // Create data streams - start in place
+    for (let i = 0; i < 15; i++) {
+      dataStreams.push(new DataStream(true));
+    }
+
+    // Draw neural connections with optimization
     function drawNeuralConnections() {
       if (!ctx) return;
       
@@ -199,16 +180,10 @@ export function MedicalTechBackground() {
           const dy = neuralNodes[i].y - neuralNodes[j].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 120) {
+          if (distance < 100) {
             ctx.beginPath();
-            const opacity = (1 - distance / 120) * 0.4;
-            const gradient = ctx.createLinearGradient(
-              neuralNodes[i].x, neuralNodes[i].y,
-              neuralNodes[j].x, neuralNodes[j].y
-            );
-            gradient.addColorStop(0, `rgba(168, 85, 247, ${opacity})`);
-            gradient.addColorStop(1, `rgba(236, 72, 153, ${opacity})`);
-            ctx.strokeStyle = gradient;
+            const opacity = (1 - distance / 100) * 0.3;
+            ctx.strokeStyle = `rgba(168, 85, 247, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.moveTo(neuralNodes[i].x, neuralNodes[i].y);
             ctx.lineTo(neuralNodes[j].x, neuralNodes[j].y);
@@ -228,8 +203,8 @@ export function MedicalTechBackground() {
         
         if (p1.x > 0 && p2.x > 0 && p1.x < canvas.width && p2.x < canvas.width) {
           ctx.beginPath();
-          ctx.strokeStyle = 'rgba(6, 182, 212, 0.3)';
-          ctx.lineWidth = 2;
+          ctx.strokeStyle = 'rgba(6, 182, 212, 0.25)';
+          ctx.lineWidth = 1.5;
           ctx.moveTo(p1.x, p1.y);
           ctx.lineTo(p2.x, p2.y);
           ctx.stroke();
@@ -237,7 +212,7 @@ export function MedicalTechBackground() {
       }
     }
 
-    // Animation loop
+    // Optimized animation loop
     let animationId: number;
     function animate() {
       if (!ctx) return;
@@ -275,7 +250,7 @@ export function MedicalTechBackground() {
     };
   }, []);
 
-  // Floating medical icons configuration
+  // Optimized floating medical icons configuration
   const medicalIcons = [
     { Icon: Heart, color: '#ec4899', delay: 0, duration: 20, x: '10%', y: '15%' },
     { Icon: Activity, color: '#06b6d4', delay: 2, duration: 18, x: '85%', y: '20%' },
@@ -292,7 +267,10 @@ export function MedicalTechBackground() {
       
       {/* Animated gradient overlay */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-pink-900/40 to-blue-900/40"
+        className="absolute inset-0"
+        initial={{
+          background: 'linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(157, 23, 77, 0.4), rgba(30, 58, 138, 0.4))'
+        }}
         animate={{
           background: [
             'linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(157, 23, 77, 0.4), rgba(30, 58, 138, 0.4))',
@@ -303,14 +281,16 @@ export function MedicalTechBackground() {
         transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
       />
 
-      {/* Large floating orbs with motion */}
+      {/* Optimized large floating orbs with will-change */}
       <motion.div 
-        className="absolute w-[600px] h-[600px] rounded-full filter blur-3xl opacity-30"
+        className="absolute w-[500px] h-[500px] rounded-full filter blur-3xl opacity-25"
         style={{ 
           background: 'radial-gradient(circle, rgba(168, 85, 247, 0.6), transparent)',
           top: '10%',
-          left: '5%'
+          left: '5%',
+          willChange: 'transform'
         }}
+        initial={{ x: 0, y: 0, scale: 1 }}
         animate={{
           x: [0, 50, 0],
           y: [0, 100, 0],
@@ -320,12 +300,14 @@ export function MedicalTechBackground() {
       />
       
       <motion.div 
-        className="absolute w-[500px] h-[500px] rounded-full filter blur-3xl opacity-30"
+        className="absolute w-[400px] h-[400px] rounded-full filter blur-3xl opacity-25"
         style={{ 
           background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6), transparent)',
           bottom: '10%',
-          right: '5%'
+          right: '5%',
+          willChange: 'transform'
         }}
+        initial={{ x: 0, y: 0, scale: 1 }}
         animate={{
           x: [0, -60, 0],
           y: [0, -80, 0],
@@ -335,13 +317,15 @@ export function MedicalTechBackground() {
       />
       
       <motion.div 
-        className="absolute w-[400px] h-[400px] rounded-full filter blur-3xl opacity-20"
+        className="absolute w-[350px] h-[350px] rounded-full filter blur-3xl opacity-20"
         style={{ 
           background: 'radial-gradient(circle, rgba(6, 182, 212, 0.6), transparent)',
           top: '50%',
           left: '50%',
-          transform: 'translate(-50%, -50%)'
+          transform: 'translate(-50%, -50%)',
+          willChange: 'transform, opacity'
         }}
+        initial={{ scale: 1, opacity: 0.2 }}
         animate={{
           scale: [1, 1.4, 1],
           opacity: [0.2, 0.3, 0.2],
@@ -349,14 +333,13 @@ export function MedicalTechBackground() {
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Circuit board pattern overlay */}
+      {/* Simplified circuit board pattern */}
       <div 
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `
             repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(6, 182, 212, 0.3) 50px, rgba(6, 182, 212, 0.3) 51px),
-            repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(236, 72, 153, 0.3) 50px, rgba(236, 72, 153, 0.3) 51px),
-            repeating-linear-gradient(45deg, transparent, transparent 70px, rgba(168, 85, 247, 0.2) 70px, rgba(168, 85, 247, 0.2) 71px)
+            repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(236, 72, 153, 0.3) 50px, rgba(236, 72, 153, 0.3) 51px)
           `,
         }}
       />
@@ -364,22 +347,22 @@ export function MedicalTechBackground() {
       {/* Canvas for advanced animations */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 opacity-80"
-        style={{ pointerEvents: 'none' }}
+        className="absolute inset-0 opacity-70"
+        style={{ pointerEvents: 'none', willChange: 'contents' }}
       />
 
-      {/* Floating medical-tech icons */}
+      {/* Optimized floating medical-tech icons */}
       {medicalIcons.map(({ Icon, color, delay, duration, x, y }, index) => (
         <motion.div
           key={index}
           className="absolute"
-          style={{ left: x, top: y }}
-          initial={{ opacity: 0, scale: 0 }}
+          style={{ left: x, top: y, willChange: 'transform, opacity' }}
+          initial={{ opacity: 0.15, scale: 1, y: 0, rotate: 0 }}
           animate={{
-            opacity: [0, 0.15, 0],
-            scale: [0.8, 1.2, 0.8],
-            y: [0, -30, 0],
-            rotate: [0, 360],
+            opacity: [0.15, 0.25, 0.15],
+            scale: [1, 1.1, 1],
+            y: [0, -20, 0],
+            rotate: [0, 180, 360],
           }}
           transition={{
             duration: duration,
@@ -388,16 +371,18 @@ export function MedicalTechBackground() {
             ease: "easeInOut"
           }}
         >
-          <Icon size={48} color={color} strokeWidth={1.5} />
+          <Icon size={40} color={color} strokeWidth={1.5} />
         </motion.div>
       ))}
 
-      {/* Holographic scan lines */}
+      {/* Optimized holographic scan lines */}
       <motion.div 
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-8"
         style={{
-          background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(6, 182, 212, 0.5) 2px, rgba(6, 182, 212, 0.5) 4px)',
+          background: 'repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(6, 182, 212, 0.4) 3px, rgba(6, 182, 212, 0.4) 4px)',
+          willChange: 'transform'
         }}
+        initial={{ y: '0%' }}
         animate={{
           y: ['0%', '100%'],
         }}
