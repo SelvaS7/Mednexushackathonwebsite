@@ -17,10 +17,10 @@ export function AboutCompanies() {
             rel="noopener noreferrer"
             className="animate-float-delay-3 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 block cursor-pointer hover:border-purple-400/60 hover:shadow-lg hover:shadow-purple-500/20 transition-all active:scale-[0.99] no-underline"
           >
-            <h3 className="text-2xl md:text-3xl mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl mb-3 md:mb-4">
               <span className="text-cyan-400">About Acutix Soft LLP</span>
             </h3>
-            <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+            <p className="text-gray-300 text-xs md:text-base leading-relaxed">
               Acutix Soft LLP is a technology-driven organization focused on building enterprise solutions, 
               low-code/no-code platforms, and scalable digital frameworks. The company works closely with 
               academic institutions to promote industry-relevant innovation, live projects, and hands-on 
@@ -36,10 +36,10 @@ export function AboutCompanies() {
             rel="noopener noreferrer"
             className="animate-float-delay-4 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 block cursor-pointer hover:border-purple-400/60 hover:shadow-lg hover:shadow-purple-500/20 transition-all active:scale-[0.99] no-underline"
           >
-            <h3 className="text-2xl md:text-3xl mb-4 md:mb-6">
+            <h3 className="text-xl md:text-2xl mb-3 md:mb-4">
               <span className="text-cyan-400">About Vels Institute of Science, Technology and Advanced Studies (VISTAS)</span>
             </h3>
-            <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+            <p className="text-gray-300 text-xs md:text-base leading-relaxed">
               VISTAS is a Deemed-to-be University established under the VAELS Educational Trust, with a 
               strong mission to empower learners through quality education and holistic development. The 
               university focuses on developing Knowledge, Skills, and Attitude (KSA), preparing students 

@@ -1,7 +1,7 @@
 
-  # Hackathon website creation
+  # MEDNEXUS
 
-  This is a code bundle for Hackathon website creation. The original project is available at https://www.figma.com/design/Y5bVMk9rJF9BQ3RVSvVIEF/Hackathon-website-creation.
+  This is a code bundle for MEDNEXUS. The original project is available at https://www.figma.com/design/Y5bVMk9rJF9BQ3RVSvVIEF/MEDNEXUS.
 
   ## Running the code
 

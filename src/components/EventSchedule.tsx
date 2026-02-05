@@ -25,7 +25,7 @@ export function EventSchedule() {
   ];
 
   return (
-    <section id="event" className="py-12 md:py-20 px-4 md:px-6">
+    <section id="event" className="py-8 md:py-12 px-4 md:px-6">
       <div className="container mx-auto max-w-6xl animate-float-delay-2">
         <h2 className="text-3xl md:text-5xl text-center mb-3 md:mb-4">
           <span className="text-white">EVENT </span>

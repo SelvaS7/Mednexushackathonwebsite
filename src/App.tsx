@@ -3,8 +3,8 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { EventSchedule } from './components/EventSchedule';
-import { AboutCompanies } from './components/AboutCompanies';
 import { ContactInfo } from './components/ContactInfo';
+import { AboutCompanies } from './components/AboutCompanies';
 import { Footer } from './components/Footer';
 import { MedicalTechBackground } from './components/MedicalTechBackground';
 
@@ -20,8 +20,8 @@ export default function App() {
         <Hero />
         <About />
         <EventSchedule />
-        <AboutCompanies />
         <ContactInfo />
+        <AboutCompanies />
         <Footer />
       </div>
     </div>
