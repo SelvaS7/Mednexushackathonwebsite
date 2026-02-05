@@ -569,7 +569,7 @@ export function Hero() {
             <MapPin className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
             <span>VISTAS - Pallavaram</span>
           </a>
-          <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4">A Low-Code /No-Code Innovation Challenge for Healthcare Systems</p>
+          <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4">National Level Healthcare AI Hackathon</p>
           
           <div className="mb-8 md:mb-12">
             <a 

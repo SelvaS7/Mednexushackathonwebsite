@@ -11,7 +11,7 @@ export function ContactInfo() {
   ];
 
   return (
-    <section className="py-8 md:py-12 px-4 md:px-6">
+    <section id="contact-info" className="py-8 md:py-12 px-4 md:px-6">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-3 md:mb-4">
           <span className="text-cyan-400">Contact Information</span>

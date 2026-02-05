@@ -1,10 +1,13 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { PrizesOpportunities } from './components/PrizesOpportunities';
 import { About } from './components/About';
 import { EventSchedule } from './components/EventSchedule';
+import { ProblemStatements } from './components/ProblemStatements';
 import { ContactInfo } from './components/ContactInfo';
 import { AboutCompanies } from './components/AboutCompanies';
+import { Partners } from './components/Partners';
 import { Footer } from './components/Footer';
 import { MedicalTechBackground } from './components/MedicalTechBackground';
 
@@ -18,10 +21,13 @@ export default function App() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <About />
+        <PrizesOpportunities />
+        <ProblemStatements />
         <EventSchedule />
-        <ContactInfo />
+        <About />
         <AboutCompanies />
+        <Partners />
+        <ContactInfo />
         <Footer />
       </div>
     </div>

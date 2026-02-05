@@ -2,7 +2,7 @@ import React from 'react';
 
 export function AboutCompanies() {
   return (
-    <section className="py-12 md:py-20 px-4 md:px-6 bg-black/20">
+    <section className="py-12 md:py-20 px-4 md:px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-5xl text-center mb-8 md:mb-12">
           <span className="text-white">ABOUT </span>
@@ -20,7 +20,7 @@ export function AboutCompanies() {
             <h3 className="text-xl md:text-2xl mb-3 md:mb-4">
               <span className="text-cyan-400">About Acutix Soft LLP</span>
             </h3>
-            <p className="text-gray-300 text-xs md:text-base leading-relaxed">
+            <p className="text-gray-300 text-xs md:text-base leading-relaxed text-justify">
               Acutix Soft LLP is a technology-driven organization focused on building enterprise solutions, 
               low-code/no-code platforms, and scalable digital frameworks. The company works closely with 
               academic institutions to promote industry-relevant innovation, live projects, and hands-on 
@@ -39,7 +39,7 @@ export function AboutCompanies() {
             <h3 className="text-xl md:text-2xl mb-3 md:mb-4">
               <span className="text-cyan-400">About Vels Institute of Science, Technology and Advanced Studies (VISTAS)</span>
             </h3>
-            <p className="text-gray-300 text-xs md:text-base leading-relaxed">
+            <p className="text-gray-300 text-xs md:text-base leading-relaxed text-justify">
               VISTAS is a Deemed-to-be University established under the VAELS Educational Trust, with a 
               strong mission to empower learners through quality education and holistic development. The 
               university focuses on developing Knowledge, Skills, and Attitude (KSA), preparing students 

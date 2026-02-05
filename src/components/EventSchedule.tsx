@@ -4,22 +4,22 @@ export function EventSchedule() {
   const schedule = [
     { 
       round: 'Round 1', 
-      title: 'Submission of problem solution for the given problem statement',
+      title: 'Solution Proposal Submission',
       date: '9th February'
     },
     { 
       round: 'Round 2', 
-      title: 'PPT Review',
+      title: 'Technical Design Review',
       date: '16th February'
     },
     { 
       round: 'Round 3', 
-      title: 'Screening Review',
+      title: 'Prototype Evaluation',
       date: '2nd & 3rd March'
     },
     { 
       round: 'Round 4', 
-      title: 'Live Hackathon',
+      title: 'Live Hackathon & Final Demo',
       date: '13th March'
     }
   ];

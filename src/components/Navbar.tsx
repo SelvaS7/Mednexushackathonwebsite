@@ -20,7 +20,7 @@ export function Navbar() {
             <a href="#home" className="text-white hover:text-cyan-400 transition-colors animate-scale">HOME</a>
             <a href="#about" className="text-white hover:text-cyan-400 transition-colors animate-scale">ABOUT</a>
             <a href="#event" className="text-white hover:text-cyan-400 transition-colors animate-scale">EVENT</a>
-            <a href="#contact" className="text-white hover:text-cyan-400 transition-colors animate-scale">CONTACT</a>
+            <a href="#contact-info" className="text-white hover:text-cyan-400 transition-colors animate-scale">CONTACT</a>
           </div>
           
           <div className="flex items-center gap-4">
@@ -40,7 +40,7 @@ export function Navbar() {
           <a href="#home" className="text-white hover:text-cyan-400 transition-colors text-xs">HOME</a>
           <a href="#about" className="text-white hover:text-cyan-400 transition-colors text-xs">ABOUT</a>
           <a href="#event" className="text-white hover:text-cyan-400 transition-colors text-xs">EVENT</a>
-          <a href="#contact" className="text-white hover:text-cyan-400 transition-colors text-xs">CONTACT</a>
+          <a href="#contact-info" className="text-white hover:text-cyan-400 transition-colors text-xs">CONTACT</a>
         </div>
       </div>
     </nav>
