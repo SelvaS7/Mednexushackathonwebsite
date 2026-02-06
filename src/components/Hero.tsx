@@ -539,18 +539,31 @@ export function Hero() {
         {/* Hackathon Title - Healthcare Authority */}
         <div className="relative">
           <h1 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 md:mb-4 leading-tight relative whitespace-nowrap px-2"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 md:mb-4 leading-tight relative whitespace-nowrap px-2 font-black uppercase tracking-tight"
             style={{
               animation: animationPhase === 5 ? 'titleAssemble 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards, cyanGlow 3s ease-in-out 1s infinite' : 'none',
               opacity: animationPhase >= 5 ? 1 : 0,
               textShadow: animationPhase >= 5 ? '0 0 20px rgba(34, 211, 238, 0.3), 0 1px 2px rgba(0, 0, 0, 0.8)' : 'none'
             }}
           >
-            <span className="text-cyan-400 font-normal">MEDNEXUS</span>
-            <span className="text-pink-500">'26</span>
-            <span className="text-white"> - HACKATHON</span>
+            <span className="text-white font-black">MEDNEXUS</span>
+            <span className="text-pink-500 font-black">'26</span>
           </h1>
 
+          {/* Subtitle */}
+          <p 
+            className="text-base sm:text-lg md:text-xl lg:text-2xl mb-3 md:mb-4 text-center font-black uppercase tracking-tight"
+            style={{
+              animation: animationPhase === 5 ? 'titleAssemble 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards, cyanGlow 3s ease-in-out 1s infinite' : 'none',
+              opacity: animationPhase >= 5 ? 1 : 0,
+              textShadow: animationPhase >= 5 ? '0 0 20px rgba(34, 211, 238, 0.3), 0 1px 2px rgba(0, 0, 0, 0.8)' : 'none',
+              wordSpacing: '0.3em'
+            }}
+          >
+            <span className="text-white font-black font-normal font-bold">National Level Healthcare </span>
+            <span className="text-cyan-400 font-black">AI Hackathon</span>
+          </p>
+          
           {/* ECG spike beneath title */}
           {animationPhase === 5 && (
             <svg className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-64 h-8" style={{ animation: 'ecgSpike 0.7s ease-out' }}>
@@ -590,12 +603,11 @@ export function Hero() {
             href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-base md:text-lg mb-2 underline hover:underline"
+            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-base md:text-lg mb-6 md:mb-8 underline hover:underline"
           >
             <MapPin className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
             <span>VISTAS - Pallavaram</span>
           </a>
-          <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-8 px-4">National Level Healthcare AI Hackathon</p>
           
           <div className="mb-8 md:mb-12">
             <a 
