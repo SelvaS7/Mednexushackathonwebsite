@@ -33,7 +33,7 @@ export function ProblemStatements() {
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl md:text-5xl text-center mb-3 md:mb-4">
           <span className="text-white">PROBLEM </span>
-          <span className="text-cyan-400">STATEMENTS</span>
+          <span className="text-cyan-400">STATEMENT</span>
         </h2>
         
         <p className="text-center text-gray-300 mb-6 md:mb-8 text-sm md:text-base">

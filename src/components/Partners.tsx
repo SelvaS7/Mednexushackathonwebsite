@@ -18,7 +18,7 @@ export function Partners() {
             href="https://www.ascasclinic.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="animate-card animate-float-smooth bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm border-2 border-purple-500/40 rounded-2xl p-5 md:p-6 hover:border-purple-500/70 transition-all hover:shadow-xl hover:shadow-purple-500/30 cursor-pointer group"
+            className="animate-card animate-float-smooth bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm border-2 border-purple-500/40 rounded-2xl p-5 md:p-6 hover:border-purple-500/70 transition-all hover:shadow-xl hover:shadow-purple-500/30 cursor-pointer group text-[rgb(0,0,0)] font-bold font-normal not-italic no-underline text-justify"
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-center mb-3 md:mb-4">
@@ -58,7 +58,7 @@ export function Partners() {
             href="https://youtube.com/@doctormommies?si=yALegWQvjLqsxOrW"
             target="_blank"
             rel="noopener noreferrer"
-            className="animate-card animate-float-delay-1 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 backdrop-blur-sm border-2 border-cyan-500/40 rounded-2xl p-5 md:p-6 hover:border-cyan-500/70 transition-all hover:shadow-xl hover:shadow-cyan-500/30 cursor-pointer group"
+            className="animate-card animate-float-delay-1 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 backdrop-blur-sm border-2 border-cyan-500/40 rounded-2xl p-5 md:p-6 hover:border-cyan-500/70 transition-all hover:shadow-xl hover:shadow-cyan-500/30 cursor-pointer group text-justify"
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-center mb-3 md:mb-4">

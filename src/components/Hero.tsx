@@ -3,7 +3,7 @@ import image_e3ca48b59b673339fcde79baecddafdcd1ae5491 from 'figma:asset/e3ca48b5
 import image_502e164215457556b0b9aa333c8fc217b56a6cc1 from 'figma:asset/502e164215457556b0b9aa333c8fc217b56a6cc1.png';
 import image_0c79ead2911f3a802255d747c282d969b59834a8 from 'figma:asset/0c79ead2911f3a802255d747c282d969b59834a8.png';
 import velsHeader from 'figma:asset/8f8ee5cdaad9e9ef99c6ea42a44c0f22196b94bf.png';
-import velsAccreditation from 'figma:asset/57e90e930d262dc76deb5d81c1f7e1b6bb21845b.png';
+import velsAccreditation from 'figma:asset/2798a6e9d4907a68040ab5ab697a86a3b0020b7a.png';
 import React, { useState, useEffect } from 'react';
 import acutixLogo from 'figma:asset/1fa495b39f1c3d98a68aec11e57c680d5566de7b.png';
 import { MapPin } from 'lucide-react';
@@ -473,47 +473,73 @@ export function Hero() {
 
         {/* Partnership Logos */}
         <div 
-          className="flex items-center justify-center gap-2 sm:gap-3 md:gap-8 mb-6 md:mb-8 relative"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-8 mb-6 md:mb-8 relative px-4"
           style={{
             opacity: animationPhase >= 5 ? 1 : 0,
             animation: animationPhase === 5 ? 'stableReturn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards' : 'none',
             transition: 'opacity 0.4s ease-in-out'
           }}
         >
-          <img 
-            src={image_0c79ead2911f3a802255d747c282d969b59834a8} 
-            alt="Acutix Soft LLP" 
-            className="h-20 sm:h-24 md:h-32 lg:h-40 object-contain flex-shrink-0" 
+          {/* VELS University - Top Left */}
+          <div 
+            className="flex flex-col gap-0 flex-shrink-0 w-full sm:w-auto items-center"
             style={{
               animation: animationPhase === 2 ? 'medicalEntranceLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards' :
                          animationPhase === 4 ? 'logoDisintegrate 0.6s ease-in forwards' : 'none',
               opacity: (animationPhase >= 2 && animationPhase < 4) || animationPhase >= 5 ? 1 : 0
             }}
-          />
-          <span 
-            className="text-cyan-400 text-xl sm:text-2xl md:text-4xl flex-shrink-0"
+          >
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-20 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[180px] sm:max-w-none" />
+            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain" />
+          </div>
+
+          {/* In Collaboration */}
+          <div 
+            className="flex flex-col items-center justify-center flex-shrink-0 px-2 sm:px-4 md:px-6"
             style={{
               opacity: animationPhase >= 5 ? 1 : 0,
               transition: 'opacity 0.3s ease-in-out'
             }}
-          >×</span>
+          >
+            <div className="relative">
+              <div className="text-[10px] sm:text-xs md:text-sm text-cyan-400/80 mb-0.5 sm:mb-1 tracking-wider uppercase font-light">In</div>
+              <div 
+                className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap"
+                style={{
+                  textShadow: '0 0 20px rgba(34, 211, 238, 0.3)',
+                  filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))'
+                }}
+              >
+                Collaboration
+              </div>
+              <div className="text-[10px] sm:text-xs md:text-sm text-pink-400/80 mt-0.5 sm:mt-1 tracking-wider uppercase font-light">With</div>
+              {/* Decorative elements */}
+              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-2 w-2 h-2 sm:w-3 sm:h-3 border-l-2 border-t-2 border-cyan-400/40"></div>
+              <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-2 h-2 sm:w-3 sm:h-3 border-r-2 border-b-2 border-pink-400/40"></div>
+            </div>
+          </div>
+          
+          {/* Acutix Logo */}
           <div 
-            className="flex flex-col gap-0 flex-shrink-0"
+            className="flex flex-col gap-0 flex-shrink-0 w-full sm:w-auto items-center"
             style={{
               animation: animationPhase === 2 ? 'medicalEntranceRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards' :
                          animationPhase === 4 ? 'logoDisintegrate 0.6s ease-in forwards' : 'none',
               opacity: (animationPhase >= 2 && animationPhase < 4) || animationPhase >= 5 ? 1 : 0
             }}
           >
-            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-16 sm:h-20 md:h-28 lg:h-32 object-contain" />
-            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[200px] sm:max-w-[250px] md:max-w-md object-contain" />
+            <img 
+              src={image_0c79ead2911f3a802255d747c282d969b59834a8} 
+              alt="Acutix Soft LLP" 
+              className="h-24 sm:h-28 md:h-36 lg:h-44 object-contain max-w-[200px] sm:max-w-[280px] md:max-w-none" 
+            />
           </div>
         </div>
         
         {/* Hackathon Title - Healthcare Authority */}
         <div className="relative">
           <h1 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-3 md:mb-4 leading-tight relative"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 md:mb-4 leading-tight relative whitespace-nowrap px-2"
             style={{
               animation: animationPhase === 5 ? 'titleAssemble 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards, cyanGlow 3s ease-in-out 1s infinite' : 'none',
               opacity: animationPhase >= 5 ? 1 : 0,
@@ -522,7 +548,7 @@ export function Hero() {
           >
             <span className="text-cyan-400 font-normal">MEDNEXUS</span>
             <span className="text-pink-500">'26</span>
-            <span className="text-white text-[28px] sm:text-[36px] md:text-[48px] lg:text-[64px]"> - HACKATHON</span>
+            <span className="text-white"> - HACKATHON</span>
           </h1>
 
           {/* ECG spike beneath title */}
