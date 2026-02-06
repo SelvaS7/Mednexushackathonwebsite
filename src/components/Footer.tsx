@@ -19,14 +19,17 @@ export function Footer() {
               <br />
               Inspiring Future.
             </p>
-            <a
-              href="https://www.instagram.com/mednexus_2026?igsh=dmx6bWtwMWx0ZXhk&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-white hover:text-cyan-400 transition-colors"
-            >
-              <Instagram className="w-5 h-5 md:w-6 md:h-6" />
-            </a>
+            <div className="flex items-center gap-2">
+              <span className="text-gray-400 text-xs md:text-sm">Follow us on</span>
+              <a
+                href="https://www.instagram.com/mednexus_2026?igsh=dmx6bWtwMWx0ZXhk&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white hover:text-cyan-400 transition-colors"
+              >
+                <Instagram className="w-5 h-5 md:w-6 md:h-6" />
+              </a>
+            </div>
           </div>
 
           <div>
