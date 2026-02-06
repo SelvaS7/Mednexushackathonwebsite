@@ -600,8 +600,8 @@
     margin-inline: auto;
   }
 
-  .my-\[20px\] {
-    margin-block: 20px;
+  .my-\[8px\] {
+    margin-block: 8px;
   }
 
   .-mt-2 {
@@ -1669,10 +1669,6 @@
     padding-inline: calc(var(--spacing) * 6);
   }
 
-  .px-\[70px\] {
-    padding-inline: 70px;
-  }
-
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1785,12 +1781,12 @@
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
 
-  .text-\[7px\] {
-    font-size: 7px;
+  .text-\[8px\] {
+    font-size: 8px;
   }
 
-  .text-\[15px\] {
-    font-size: 15px;
+  .text-\[14px\] {
+    font-size: 14px;
   }
 
   .leading-none {
@@ -2428,6 +2424,12 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:px-\[70px\] {
+      padding-inline: 70px;
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -2457,6 +2459,12 @@
   @media (width >= 48rem) {
     .md\:mx-auto {
       margin-inline: auto;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:my-\[20px\] {
+      margin-block: 20px;
     }
   }
 

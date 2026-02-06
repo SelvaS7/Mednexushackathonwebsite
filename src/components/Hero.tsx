@@ -473,7 +473,7 @@ export function Hero() {
 
         {/* Partnership Logos */}
         <div 
-          className="flex flex-row items-center justify-center gap-0.5 sm:gap-3 md:gap-8 mb-6 md:mb-8 relative px-0 sm:px-4"
+          className="flex flex-row items-center justify-center gap-0.5 sm:gap-3 md:gap-8 mb-2 md:mb-8 relative px-0 sm:px-4"
           style={{
             opacity: animationPhase >= 5 ? 1 : 0,
             animation: animationPhase === 5 ? 'stableReturn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards' : 'none',
@@ -489,8 +489,8 @@ export function Hero() {
               opacity: (animationPhase >= 2 && animationPhase < 4) || animationPhase >= 5 ? 1 : 0
             }}
           >
-            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[200px] sm:max-w-none mx-[0px] my-[20px]" />
-            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[200px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain px-[70px] py-[0px] -mt-2" />
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[200px] sm:max-w-none mx-[0px] my-[8px] md:my-[20px]" />
+            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[200px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain px-0 sm:px-[70px] py-[0px] -mt-2" />
           </div>
 
           {/* In Collaboration */}
@@ -502,9 +502,9 @@ export function Hero() {
             }}
           >
             <div className="relative">
-              <div className="sm:text-xs md:text-sm text-cyan-400/80 mb-0 sm:mb-1 tracking-wider font-light text-[15px]">in</div>
+              <div className="text-[8px] sm:text-xs md:text-sm text-cyan-400/80 mb-0 sm:mb-1 tracking-wider font-light">in</div>
               <div 
-                className="text-[7px] sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap leading-none"
+                className="text-[14px] sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap leading-none"
                 style={{
                   textShadow: '0 0 20px rgba(34, 211, 238, 0.3)',
                   filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))'
@@ -512,7 +512,7 @@ export function Hero() {
               >
                 Collaboration
               </div>
-              <div className="sm:text-xs md:text-sm text-pink-400/80 mt-0 sm:mt-1 tracking-wider font-light text-[15px]">with</div>
+              <div className="text-[8px] sm:text-xs md:text-sm text-pink-400/80 mt-0 sm:mt-1 tracking-wider font-light">with</div>
               {/* Decorative elements */}
               
               
