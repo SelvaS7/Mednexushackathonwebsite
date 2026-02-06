@@ -17,7 +17,7 @@ export function ContactInfo() {
           <span className="text-cyan-400">Contact Information</span>
         </h2>
         <p className="text-white/80 text-center mb-8 md:mb-12 text-base md:text-lg">
-          Student Co-ordinator
+          Student Co-ordinators
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 max-w-2xl mx-auto">

@@ -1,5 +1,5 @@
 import React from 'react';
-import brochureImage from 'figma:asset/0cb80c33778c77950facb736d9bcf6123e7c7a75.png';
+import brochureImage from 'figma:asset/5ec5538a7ae68008e50a5bf405b96eb8c33db27a.png';
 
 export function About() {
   return (
@@ -14,7 +14,7 @@ export function About() {
           
           <div className="max-w-md mx-auto animate-float-delay-1">
             <div className="animate-card bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-sm border border-pink-500/20 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-pink-500/50 transition-all cursor-pointer">
-              <div className="h-56 md:h-64 rounded-lg md:rounded-xl mb-4 overflow-hidden bg-black/20">
+              <div className="h-56 md:h-64 rounded-lg md:rounded-xl mb-4 overflow-hidden bg-black/20 flex items-center justify-center">
                 <img 
                   src={brochureImage}
                   alt="MEDNEXUS'26 Brochure - Healthcare Innovation Hackathon"

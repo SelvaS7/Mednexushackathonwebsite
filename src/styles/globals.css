@@ -122,12 +122,14 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   body {
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
 

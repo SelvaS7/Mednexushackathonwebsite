@@ -489,8 +489,8 @@ export function Hero() {
               opacity: (animationPhase >= 2 && animationPhase < 4) || animationPhase >= 5 ? 1 : 0
             }}
           >
-            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-20 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[180px] sm:max-w-none" />
-            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain" />
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-24 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[200px] sm:max-w-none mx-[0px] my-[20px]" />
+            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[200px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain px-[70px] py-[0px] -mt-2" />
           </div>
 
           {/* In Collaboration */}
@@ -502,7 +502,7 @@ export function Hero() {
             }}
           >
             <div className="relative">
-              <div className="text-[6px] sm:text-xs md:text-sm text-cyan-400/80 mb-0 sm:mb-1 tracking-wider uppercase font-light">In</div>
+              <div className="sm:text-xs md:text-sm text-cyan-400/80 mb-0 sm:mb-1 tracking-wider font-light text-[15px]">in</div>
               <div 
                 className="text-[7px] sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap leading-none"
                 style={{
@@ -510,12 +510,12 @@ export function Hero() {
                   filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))'
                 }}
               >
-                Collab
+                Collaboration
               </div>
-              <div className="text-[6px] sm:text-xs md:text-sm text-pink-400/80 mt-0 sm:mt-1 tracking-wider uppercase font-light">With</div>
+              <div className="sm:text-xs md:text-sm text-pink-400/80 mt-0 sm:mt-1 tracking-wider font-light text-[15px]">with</div>
               {/* Decorative elements */}
-              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-2 w-2 h-2 sm:w-3 sm:h-3 border-l-2 border-t-2 border-cyan-400/40"></div>
-              <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-2 h-2 sm:w-3 sm:h-3 border-r-2 border-b-2 border-pink-400/40"></div>
+              
+              
             </div>
           </div>
           
@@ -590,7 +590,7 @@ export function Hero() {
             href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-base md:text-lg mb-2"
+            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-base md:text-lg mb-2 underline hover:underline"
           >
             <MapPin className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
             <span>VISTAS - Pallavaram</span>
