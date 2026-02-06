@@ -473,7 +473,7 @@ export function Hero() {
 
         {/* Partnership Logos */}
         <div 
-          className="flex flex-row items-center justify-center gap-1 sm:gap-3 md:gap-8 mb-6 md:mb-8 relative px-1 sm:px-4"
+          className="flex flex-row items-center justify-center gap-0.5 sm:gap-3 md:gap-8 mb-6 md:mb-8 relative px-0 sm:px-4"
           style={{
             opacity: animationPhase >= 5 ? 1 : 0,
             animation: animationPhase === 5 ? 'stableReturn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards' : 'none',
@@ -489,22 +489,22 @@ export function Hero() {
               opacity: (animationPhase >= 2 && animationPhase < 4) || animationPhase >= 5 ? 1 : 0
             }}
           >
-            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-16 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[140px] sm:max-w-none" />
-            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[140px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain" />
+            <img src={image_b7b9f7bb278f99cbaed681c51c2e3683f24cba44} alt="VELS University" className="h-20 sm:h-20 md:h-28 lg:h-32 object-contain max-w-[180px] sm:max-w-none" />
+            <img src={velsAccreditation} alt="Ranked and Accredited by" className="h-auto w-full max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-md object-contain" />
           </div>
 
           {/* In Collaboration */}
           <div 
-            className="flex flex-col items-center justify-center flex-shrink-0 px-0.5 sm:px-4 md:px-6"
+            className="flex flex-col items-center justify-center flex-shrink-0 px-0 sm:px-4 md:px-6"
             style={{
               opacity: animationPhase >= 5 ? 1 : 0,
               transition: 'opacity 0.3s ease-in-out'
             }}
           >
             <div className="relative">
-              <div className="text-[7px] sm:text-xs md:text-sm text-cyan-400/80 mb-0.5 sm:mb-1 tracking-wider uppercase font-light">In</div>
+              <div className="text-[6px] sm:text-xs md:text-sm text-cyan-400/80 mb-0 sm:mb-1 tracking-wider uppercase font-light">In</div>
               <div 
-                className="text-[9px] sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap leading-tight"
+                className="text-[7px] sm:text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent whitespace-nowrap leading-none"
                 style={{
                   textShadow: '0 0 20px rgba(34, 211, 238, 0.3)',
                   filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))'
@@ -512,7 +512,7 @@ export function Hero() {
               >
                 Collab
               </div>
-              <div className="text-[7px] sm:text-xs md:text-sm text-pink-400/80 mt-0.5 sm:mt-1 tracking-wider uppercase font-light">With</div>
+              <div className="text-[6px] sm:text-xs md:text-sm text-pink-400/80 mt-0 sm:mt-1 tracking-wider uppercase font-light">With</div>
               {/* Decorative elements */}
               <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-2 w-2 h-2 sm:w-3 sm:h-3 border-l-2 border-t-2 border-cyan-400/40"></div>
               <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-2 h-2 sm:w-3 sm:h-3 border-r-2 border-b-2 border-pink-400/40"></div>
@@ -531,7 +531,7 @@ export function Hero() {
             <img 
               src={image_0c79ead2911f3a802255d747c282d969b59834a8} 
               alt="Acutix Soft LLP" 
-              className="h-18 sm:h-28 md:h-36 lg:h-44 object-contain max-w-[160px] sm:max-w-[280px] md:max-w-none" 
+              className="h-24 sm:h-28 md:h-36 lg:h-44 object-contain max-w-[200px] sm:max-w-[280px] md:max-w-none" 
             />
           </div>
         </div>
