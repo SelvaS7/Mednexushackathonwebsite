@@ -7,8 +7,8 @@ export function Partners() {
     <section id="partners" className="py-8 md:py-12 px-4 md:px-6">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-3 md:mb-4">
-          <span className="text-white">Our </span>
-          <span className="text-cyan-400">Partners</span>
+          <span className="text-white">CERTIFICATES &</span>
+          <span className="text-cyan-400"> TROPHIES SPONSERS</span>
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6 md:mb-8"></div>
         

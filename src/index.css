@@ -2123,6 +2123,10 @@
     transition-timing-function: var(--ease-out);
   }
 
+  .running {
+    animation-play-state: running;
+  }
+
   @media (hover: hover) {
     .group-hover\:scale-105:is(:where(.group):hover *) {
       --tw-scale-x: 105%;

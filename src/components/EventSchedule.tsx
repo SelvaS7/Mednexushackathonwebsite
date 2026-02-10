@@ -8,7 +8,7 @@ export function EventSchedule() {
     { 
       round: 'Round 1', 
       title: 'Solution Proposal Submission',
-      date: '9th February',
+      date: '11th February',
       mode: 'Online',
       description: [
         'Teams must submit a detailed solution proposal for one of the given problem statements.',
@@ -24,7 +24,7 @@ export function EventSchedule() {
     { 
       round: 'Round 2', 
       title: 'Technical Design Review',
-      date: '16th February',
+      date: '17th February',
       mode: 'Online',
       description: [
         'Shortlisted teams will present a detailed technical design and system architecture.',

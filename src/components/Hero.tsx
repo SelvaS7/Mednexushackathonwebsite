@@ -20,7 +20,7 @@ export function Hero() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2026-02-09T00:00:00').getTime();
+      const eventDate = new Date('2026-02-15T00:00:00').getTime();
       const now = new Date().getTime();
       const difference = eventDate - now;
 
@@ -598,7 +598,7 @@ export function Hero() {
             transition: 'opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s'
           }}
         >
-          <p className="text-white text-base md:text-lg mb-2 mt-4">February 9, 2026</p>
+          <p className="text-white text-base md:text-lg mb-2 mt-4">February 11, 2026</p>
           <a 
             href="https://maps.app.goo.gl/yCQW1NGAJkU1xLBa8"
             target="_blank"
@@ -620,6 +620,10 @@ export function Hero() {
             </a>
             <p className="text-yellow-400 text-base md:text-lg mt-3">FREE REGISTRATION</p>
           </div>
+          
+          <p className="text-transparent bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-base md:text-lg mb-4 animate-pulse">
+            Clock's running - Claim your free pass to innovation
+          </p>
           
           <div className="flex justify-center gap-3 sm:gap-4 md:gap-6 flex-wrap px-2">
             <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
