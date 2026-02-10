@@ -8,7 +8,7 @@ export function Partners() {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-3 md:mb-4">
           <span className="text-white">CERTIFICATES &</span>
-          <span className="text-cyan-400"> TROPHIES SPONSERS</span>
+          <span className="text-cyan-400"> TROPHIES SPONSORS</span>
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-6 md:mb-8"></div>
         
@@ -32,7 +32,6 @@ export function Partners() {
               </div>
               
               <p className="text-purple-400 text-center text-xs md:text-sm font-semibold mb-2 uppercase tracking-wide">
-                Medical Partner
               </p>
               
               <h3 className="text-lg md:text-xl font-bold mb-3 text-center">
@@ -72,7 +71,6 @@ export function Partners() {
               </div>
               
               <p className="text-cyan-400 text-center text-xs md:text-sm font-semibold mb-2 uppercase tracking-wide">
-                Youtube Media Partner
               </p>
               
               <h3 className="text-lg md:text-xl font-bold mb-3 text-center">
