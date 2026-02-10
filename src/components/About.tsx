@@ -13,17 +13,24 @@ export function About() {
           </h3>
           
           <div className="max-w-md mx-auto animate-float-delay-1">
-            <div className="animate-card bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-sm border border-pink-500/20 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-pink-500/50 transition-all cursor-pointer">
-              <div className="h-56 md:h-64 rounded-lg md:rounded-xl mb-4 overflow-hidden bg-black/20 flex items-center justify-center">
-                <img 
-                  src={brochureImage}
-                  alt="MEDNEXUS'26 Brochure - Healthcare Innovation Hackathon"
-                  className="w-full h-full object-cover"
-                />
+            <a 
+              href="https://drive.google.com/file/d/18rb8ySRV-DeZKfyP1HMcGIUxHh4V_-7t/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="animate-card bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-sm border border-pink-500/20 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/20 hover:scale-[1.02] transition-all cursor-pointer">
+                <div className="h-56 md:h-64 rounded-lg md:rounded-xl mb-4 overflow-hidden bg-black/20 flex items-center justify-center">
+                  <img 
+                    src={brochureImage}
+                    alt="MEDNEXUS'26 Brochure - Healthcare Innovation Hackathon"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="text-white text-lg md:text-xl mb-2">MEDNEXUS'26 HACKATHON</h4>
+                <p className="text-gray-400 text-xs md:text-sm">Innovate and transform healthcare with cutting-edge technology solutions.</p>
               </div>
-              <h4 className="text-white text-lg md:text-xl mb-2">MEDNEXUS'26 HACKATHON</h4>
-              <p className="text-gray-400 text-xs md:text-sm">Innovate and transform healthcare with cutting-edge technology solutions.</p>
-            </div>
+            </a>
           </div>
         </div>
 
