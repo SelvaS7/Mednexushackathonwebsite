@@ -621,10 +621,6 @@ export function Hero() {
             <p className="text-yellow-400 text-base md:text-lg mt-3">FREE REGISTRATION</p>
           </div>
           
-          <p className="text-transparent bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-base md:text-lg mb-4 animate-pulse">
-            Clock's running - Claim your free pass to innovation
-          </p>
-          
           <div className="flex justify-center gap-3 sm:gap-4 md:gap-6 flex-wrap px-2">
             <div className="animate-card bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl md:rounded-2xl px-4 sm:px-6 md:px-8 py-4 md:py-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div className="text-2xl sm:text-3xl md:text-4xl text-white mb-1 md:mb-2">{timeLeft.days}</div>
@@ -643,6 +639,10 @@ export function Hero() {
               <div className="text-gray-400 text-xs md:text-sm">Seconds</div>
             </div>
           </div>
+          
+          <p className="text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-sm md:text-base mt-6 animate-pulse">
+            ⚡ Registrations close: 16 Feb, Morning.
+          </p>
         </div>
       </div>
     </section>
