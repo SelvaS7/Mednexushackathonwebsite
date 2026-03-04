@@ -20,7 +20,9 @@ export function Footer() {
               Inspiring Future.
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-gray-400 text-xs md:text-sm">Follow us on</span>
+              <span className="text-gray-400 text-xs md:text-sm">
+                Follow us on
+              </span>
               <a
                 href="https://www.instagram.com/mednexus_2026?igsh=dmx6bWtwMWx0ZXhk&utm_source=qr"
                 target="_blank"
@@ -33,7 +35,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-pink-500 mb-3 md:mb-4 text-base md:text-lg">CONTACT US</h4>
+            <h4 className="text-pink-500 mb-3 md:mb-4 text-base md:text-lg">
+              CONTACT US
+            </h4>
             <div className="space-y-2.5 md:space-y-3 text-gray-300 text-xs md:text-sm">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
@@ -55,7 +59,6 @@ export function Footer() {
                   mednexus26@gmail.com
                 </a>
               </div>
-              
             </div>
           </div>
         </div>
@@ -64,7 +67,7 @@ export function Footer() {
           <div>© 2026 MedNexus. All Rights Reserved.</div>
           <div>
             Designed by{" "}
-            <span className="text-pink-500">Team MedNexus</span>
+            <span className="text-pink-500">Selvakumar S</span>
           </div>
         </div>
       </div>
